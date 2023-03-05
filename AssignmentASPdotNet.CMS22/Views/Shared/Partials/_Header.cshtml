@@ -1,0 +1,30 @@
+﻿<header>
+    <section class="header container">
+        <div class="logo">
+            <img src="~/Images/logo.png" />Emarketo
+        </div>
+
+        <nav class="menu">
+            <a asp-controller="Home" asp-action="Index">Home</a>
+            <a asp-controller="Products" asp-action="Index">Products</a>
+            <a asp-controller="Contacts" asp-action="Index">Contacts</a>
+        </nav>
+
+        <div class="menulinkicons">
+            <nav id="menu-icons-links">
+            @if (SignInManager.IsSignedIn(User))
+            {
+                <a class="menu-link" asp-controller="Products" asp-action="Search"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a class="menu-link" asp-controller="Account" asp-action="Index"><i class="fa-solid fa-user"></i></a>
+                <a class="menu-link" asp-controller="Products" asp-action="Index"><i class="fa-solid fa-cart-shopping"></i></a>
+            }
+            else
+            {
+                <a class="menu-link" asp-controller="Products" asp-action="Search"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a class="menu-link" asp-controller="Account" asp-action="Index"><i class="fa-solid fa-user"></i></a>
+                <a class="menu-link" asp-controller="Products" asp-action="Index"><i class="fa-solid fa-cart-shopping"></i></a>
+            }
+            </nav>
+        </div>
+    </section>
+</header>

@@ -1,0 +1,14 @@
+﻿@using AssignmentASPdotNet.CMS22.Models
+@using AssignmentASPdotNet.CMS22.Models.Identity;
+@using AssignmentASPdotNet.CMS22.ViewModels.Home
+@using AssignmentASPdotNet.CMS22.ViewModels.Account;
+@using AssignmentASPdotNet.CMS22.Contexts;
+@using Microsoft.AspNetCore.Identity;
+@using AssignmentASPdotNet.CMS22.Models.Forms;
+
+@inject DataContext _context
+@inject SignInManager<AppUser> SignInManager
+@inject UserManager<AppUser> UserManager
+@inject DataContext _context
+
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers

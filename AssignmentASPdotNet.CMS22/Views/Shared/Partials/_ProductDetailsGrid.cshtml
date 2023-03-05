@@ -1,0 +1,78 @@
+﻿    <section class="product-grid">
+    <div class="container">
+        <div class="title">Related Products</div>
+
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="col">
+                <div class="card">
+                    <div class="card-img-container">
+                        <a asp-controller="Products" asp-action="Index">
+                            <img src="~/Images/red-bag.png" card-img-top" alt="red-bag" />
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-title">Red Bag</p>
+                        <p class="card-price">$199</p>
+                        <p>999kr</p>
+                        <div class="card-menu d-xl-none">
+                            <a class="menu-link"><i class="fa-solid fa-cart-shopping"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-img-container">
+                        <a asp-controller="Products" asp-action="Index">
+                            <img src="~/Images/blue-jacket.png" card-img-top" alt="red-bag" />
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-title">Blue Jacket</p>
+                        <p class="card-price">1 499kr</p>
+                        <p>999kr</p>
+                        <div class="card-menu d-xl-none">
+                            <a asp-controller="Products" asp-action="AddToCart" class="menu-link"><i class="fa-solid fa-cart-shopping"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-img-container">
+                        <a asp-controller="Products" asp-action="Index">
+                            <img src="~/Images/blue-jacket.png" card-img-top" alt="red-bag" />
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-title">Blue Jacket</p>
+                        <p class="card-price">1 499kr</p>
+                        <p>999kr</p>
+                        <div class="card-menu d-xl-none">
+                            <button class="menu-link"><i class="fa-solid fa-cart-shopping"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-img-container">
+                        <a asp-controller="Products" asp-action="Index">
+                            <img src="~/Images/red-bag.png" card-img-top" alt="red-bag" />
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-title">Red Bag</p>
+                        <p class="card-price">$ 549</p>
+                        <p>999kr</p>
+                        <div class="card-menu d-xl-none">
+                            <button class="menu-link"><i class="fa-solid fa-cart-shopping"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br></br>
+</section>

@@ -1,0 +1,17 @@
+﻿@model LoginViewModel
+
+@{
+    ViewData["Title"] = "Login";
+    Layout = "~/Views/Shared/_Layout_Center.cshtml";
+}
+
+<section class="registerform">
+    <div class="title">
+        <div class="headline">
+            <span>Please Login to Your Account</span>
+            <div class="underline"></div>
+        </div>
+
+    </div>
+    <partial name="~/Views/Shared/Partials/_LoginForm.cshtml" model="@Model" />
+</section>
